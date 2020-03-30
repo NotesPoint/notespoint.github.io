@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+#myInput {
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+#myUL {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#myUL li a {
+  border: 1px solid #ddd;
+  margin-top: -1px; /* Prevent double borders */
+  background-color: #f6f6f6;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  display: block
+}
+
+#myUL li a:hover:not(.header) {
+  background-color: #eee;
+}
+</style>
+</head>
+<body>
+
+<h2>SEARCH RESULTS</h2>
+
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for subject.." title="SEARCH">
+
+<ul id="myUL">
+  <li class="sitemap-item"><a href="../ec-111-electronics-engg-lab/index.html">EC-111: ELECTRONICS ENGG. LAB</a></li>
+<li class="sitemap-item"><a href="../ch-111-engineerng-chemistry-lab/index.html">CH &ndash; 111: ENGINEERNG CHEMISTRY LAB</a></li>
+<li class="sitemap-item"><a href="../ee-111-electrical-engg-lab/index.html">EE&ndash;111: ELECTRICAL ENGG. LAB</a></li>
+<li class="sitemap-item"><a href="../cs-111-computer-programming-lab/index.html">CS &ndash; 111: COMPUTER PROGRAMMING LAB</a></li>
+<li class="sitemap-item"><a href="../ph-111-engineering-physics-lab/index.html">PH -111: ENGINEERING PHYSICS LAB</a></li>
+<li class="sitemap-item"><a href="../hs-111-communication-lab/index.html">HS&ndash;111: COMMUNICATION LAB</a></li>
+<li class="sitemap-item"><a href="../ma-202-engineering-mathematics-ii/index.html">MA&ndash;202: ENGINEERING MATHEMATICS&ndash;II</a></li>
+<li class="sitemap-item"><a href="../hs-204-buisness-communications/index.html">HS-204: BUISNESS COMMUNICATIONS</a></li>
+<li class="sitemap-item"><a href="../hs-103-disaster-management/index.html">HS-103: DISASTER MANAGEMENT</a></li>
+<li class="sitemap-item"><a href="../me-103-workshop-technology/index.html">ME-103: WORKSHOP TECHNOLOGY</a></li>
+<li class="sitemap-item"><a href="../ec-101-fundamentals-of-electronics-engg/index.html">EC -101: FUNDAMENTALS OF ELECTRONICS ENGG.</a></li>
+<li class="sitemap-item"><a href="../ee-101-principles-of-electrical-engg/index.html">EE -101: PRINCIPLES OF ELECTRICAL ENGG.</a></li>
+<li class="sitemap-item"><a href="../ch-101-engineering-chemistry/index.html">CH-101: ENGINEERING CHEMISTRY</a></li>
+<li class="sitemap-item"><a href="../hs-102-environmental-science/index.html">HS-102: ENVIRONMENTAL SCIENCE</a></li>
+<li class="sitemap-item"><a href="../me-102-engineering-drawing-graphics/index.html">ME-102: ENGINEERING DRAWING &amp; GRAPHICS</a></li>
+<li class="sitemap-item"><a href="../cs-101-computer-fundamentals-and-programming-in-c/index.html">CS -101: COMPUTER FUNDAMENTALS AND PROGRAMMING IN C++</a></li>
+<li class="sitemap-item"><a href="../me-101-engineering-mechanics/index.html">ME-101: ENGINEERING MECHANICS</a></li>
+<li class="sitemap-item"><a href="../ph-101-engineering-physics/index.html">PH-101: ENGINEERING PHYSICS</a></li>
+<li class="sitemap-item"><a href="../ma-101-engineering-mathematic-i/index.html">MA-101: ENGINEERING MATHEMATIC-I</a></li>
+<li class="sitemap-item"><a href="../hs-101-english-communication-skills/index.html">HS-101: ENGLISH COMMUNICATION SKILLS</a></li>
+<li class="sitemap-item"><a href="../ce-806-transportatation-system-planning/index.html">CE 806: TRANSPORTATATION SYSTEM PLANNING</a></li>
+<li class="sitemap-item"><a href="../ce-805-design-of-earthquake-resistant-structures/index.html">CE 805: DESIGN OF EARTHQUAKE RESISTANT STRUCTURES</a></li>
+<li class="sitemap-item"><a href="../ce-804-design-of-pre-stressed-concrete-structures/index.html">CE-804: DESIGN OF PRE-STRESSED CONCRETE STRUCTURES</a></li>
+<li class="sitemap-item"><a href="../ce-803-water-power-engineering/index.html">CE-803: WATER POWER ENGINEERING</a></li>
+<li class="sitemap-item"><a href="../ce-802-ground-water-hydrology/index.html">CE-802: GROUND WATER HYDROLOGY</a></li>
+<li class="sitemap-item"><a href="../ce-801-highway-pavement-design/index.html">CE-801: HIGHWAY PAVEMENT DESIGN</a></li>
+<li class="sitemap-item"><a href="../ce-601-design-of-concrete-structures-ii/index.html">CE-601: DESIGN OF CONCRETE STRUCTURES &ndash; II</a></li>
+<li class="sitemap-item"><a href="../ce-701-limit-state-design-of-metal-structures/index.html">CE-701: LIMIT STATE DESIGN OF METAL STRUCTURES</a></li>
+<li class="sitemap-item"><a href="../ce-713-computer-aided-design-practice-lab-ii/index.html">CE &ndash; 713: COMPUTER AIDED DESIGN PRACTICE LAB-II</a></li>
+<li class="sitemap-item"><a href="../ce-710-finite-element-method/index.html">CE-710: FINITE ELEMENT METHOD</a></li>
+<li class="sitemap-item"><a href="../ce-709-bridge-engineering/index.html">CE-709: BRIDGE ENGINEERING</a></li>
+<li class="sitemap-item"><a href="../ce-708-municipal-solid-waste-management/index.html">CE-708: MUNICIPAL SOLID WASTE MANAGEMENT</a></li>
+<li class="sitemap-item"><a href="../ce-704-construction-engineering-and-management/index.html">CE-704: CONSTRUCTION ENGINEERING AND MANAGEMENT</a></li>
+<li class="sitemap-item"><a href="../ce-703-irrigation-and-design-of-hydraulic-structures/index.html">CE-703: IRRIGATION AND DESIGN OF HYDRAULIC STRUCTURES</a></li>
+<li class="sitemap-item"><a href="../ce-702-quantity-surveying-and-valuation/index.html">CE-702: QUANTITY SURVEYING AND VALUATION</a></li>
+<li class="sitemap-item"><a href="../ce-612-concrete-technology-lab/index.html">CE &ndash; 612: CONCRETE TECHNOLOGY LAB</a></li>
+<li class="sitemap-item"><a href="../ce-611-engineering-geology-and-rock-mechanics-lab/index.html">CE- 611: ENGINEERING GEOLOGY AND ROCK MECHANICS LAB</a></li>
+<li class="sitemap-item"><a href="../ce-610-energy-efficient-buildings/index.html">CE &ndash; 610: ENERGY EFFICIENT BUILDINGS</a></li>
+<li class="sitemap-item"><a href="../ce-609-hydraulic-machines/index.html">CE &ndash; 609: HYDRAULIC MACHINES</a></li>
+<li class="sitemap-item"><a href="../ce-608-remote-sensing-and-applications-of-gis/index.html">CE &ndash; 608: REMOTE SENSING AND APPLICATIONS OF GIS</a></li>
+<li class="sitemap-item"><a href="../ce-606-concrete-technology/index.html">CE- 606: CONCRETE TECHNOLOGY</a></li>
+<li class="sitemap-item"><a href="../ce-605-engineering-geology-and-rock-mechanics/index.html">CE- 605: ENGINEERING GEOLOGY AND ROCK MECHANICS</a></li>
+<li class="sitemap-item"><a href="../ce-604-hydrology-and-water-resources-engg/index.html">CE- 604: HYDROLOGY AND WATER RESOURCES ENGG.</a></li>
+<li class="sitemap-item"><a href="../ce-603-environmental-engineering-ii/index.html">CE-603: ENVIRONMENTAL ENGINEERING &ndash; II</a></li>
+<li class="sitemap-item"><a href="../ce-602-transportation-engineering-ii/index.html">CE-602: TRANSPORTATION ENGINEERING &ndash; II</a></li>
+<li class="sitemap-item"><a href="../ce-410-computer-aided-building-drawing-lab/index.html">CE-410: COMPUTER AIDED BUILDING DRAWING LAB</a></li>
+<li class="sitemap-item"><a href="../ce-408-surveying-lab-ii/index.html">CE-408: SURVEYING LAB &ndash;II</a></li>
+<li class="sitemap-item"><a href="../ce-407-geotechnical-engg-lab-i/index.html">CE-407: GEOTECHNICAL ENGG. LAB &ndash;I</a></li>
+<li class="sitemap-item"><a href="../ce-403-engineering-surveying-ii-2/index.html">CE-403: ENGINEERING SURVEYING &ndash;II</a></li>
+<li class="sitemap-item"><a href="../ce-403-engineering-surveying-ii/index.html">CE-403: ENGINEERING SURVEYING &ndash;II</a></li>
+<li class="sitemap-item"><a href="../ce-402-geotechnical-engineering-i/index.html">CE-402: GEOTECHNICAL ENGINEERING &ndash; I</a></li>
+<li class="sitemap-item"><a href="../ce-401-structural-analysis-i/index.html">CE-401: STRUCTURAL ANALYSIS &ndash; I</a></li>
+<li class="sitemap-item"><a href="../hs-409-human-values-and-professional-ethics/index.html">HS-409: HUMAN VALUES AND PROFESSIONAL ETHICS</a></li>
+<li class="sitemap-item"><a href="../ma-401-optimization-and-calculus-of-variations/index.html">MA-401: OPTIMIZATION AND CALCULUS OF VARIATIONS</a></li>
+<li class="sitemap-item"><a href="../ce-309-surveying-lab-i/index.html">CE-309: SURVEYING LAB &ndash; I</a></li>
+<li class="sitemap-item"><a href="../ce-308-fluid-mechanics-lab/index.html">CE-308: FLUID MECHANICS LAB</a></li>
+<li class="sitemap-item"><a href="../ce-307-building-material-testing-lab/index.html">CE-307: BUILDING MATERIAL TESTING LAB</a></li>
+<li class="sitemap-item"><a href="../hs-306-sociology-elements-of-indian-history-for-engineers/index.html">HS-306: SOCIOLOGY &amp; ELEMENTS OF INDIAN HISTORY FOR ENGINEERS</a></li>
+<li class="sitemap-item"><a href="../ce-304-building-materials/index.html">CE-304: BUILDING MATERIALS</a></li>
+<li class="sitemap-item"><a href="../ce-303-engineering-surveying-i/index.html">CE-303: ENGINEERING SURVEYING&ndash;I</a></li>
+<li class="sitemap-item"><a href="../ce-302-mechanics-of-fluids-i/index.html">CE-302: MECHANICS OF FLUIDS-I</a></li>
+<li class="sitemap-item"><a href="../ce-301-mechanics-of-solids/index.html">CE-301: MECHANICS OF SOLIDS</a></li>
+<li class="sitemap-item"><a href="../hs-305-industrial-economics-and-management/index.html">HS -305: INDUSTRIAL ECONOMICS AND MANAGEMENT</a></li>
+<li class="sitemap-item"><a href="../ma-301-probability-and-statistics/index.html">MA -301: PROBABILITY AND STATISTICS</a></li>
+<li class="sitemap-item"><a href="../ce-511-transportation-engineering-lab/index.html">CE- 511: TRANSPORTATION ENGINEERING LAB</a></li>
+<li class="sitemap-item"><a href="../ce-513-computer-aided-design-practice-lab-i/index.html">CE &ndash; 513: COMPUTER AIDED DESIGN PRACTICE LAB-I</a></li>
+<li class="sitemap-item"><a href="../ce-512-environmental-engineering-lab/index.html">CE-512: ENVIRONMENTAL ENGINEERING LAB</a></li>
+<li class="sitemap-item"><a href="../ce-506-transportation-engineering-i/index.html">CE-506: TRANSPORTATION ENGINEERING &ndash; I</a></li>
+<li class="sitemap-item"><a href="../ce-505-environmental-engineering-i/index.html">CE-505: ENVIRONMENTAL ENGINEERING&ndash; I</a></li>
+<li class="sitemap-item"><a href="../ce-504-mechanics-of-fluids-ii/index.html">CE-504: MECHANICS OF FLUIDS &ndash; II</a></li>
+<li class="sitemap-item"><a href="../ce-503-geotechnical-engineering-ii/index.html">CE-503: GEOTECHNICAL ENGINEERING&ndash;II</a></li>
+<li class="sitemap-item"><a href="../ce-502-structural-analysis-ii/index.html">CE-502: STRUCTURAL ANALYSIS &ndash; II</a></li>
+<li class="sitemap-item"><a href="../limit-state-design-of-concrete-structures-i/index.html">CE-501: LIMIT STATE DESIGN OF CONCRETE STRUCTURES</a></li>
+</ul>
+
+<script>
+function myFunction() {
+    var input, filter, ul, li, a, i, txtValue;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
+</script>
+
+</body>
+</html>
